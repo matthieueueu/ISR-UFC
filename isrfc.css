@@ -1,0 +1,122 @@
+div.fighterList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.fighterListOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+
+    /* width: 190px;
+    height: 62px;     */
+    font-size: 15px;
+
+    /* display:flexbox; */
+
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color:whitesmoke;
+    border-color: black;
+
+    /* display: inline-block; */
+    /*justify-content: space-between; */
+
+/* 
+    transition-property: transform ;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    transition: all 0.3s;
+
+
+}
+
+@keyframes slideInLeft{
+    from{   
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromTop{
+    from{   
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom{
+    from{   
+        transform: translateY(250px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.slideFromTop{
+    animation: slideFromTop 1s ease;
+}
+.slideInLeft{
+    animation: slideInLeft 1s ease;
+}
+
+.slideFromBottom{
+    animation: slideFromBottom 1s ease;
+    margin-top: 8%;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: slateblue;
+    color: white;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+
+
+    
+    transform: translate(1px,-5px);
+
+}
+
+h1,h2 {
+    text-align: center;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    font-size: xxx-large;
+}
+h2{
+    font-size: xx-large;
+}
+
+body{
+    background-image: url("file:///C:/Users/matth/Downloads/nasa-Q1p7bh3SHj8-unsplash_50.jpg");
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    font-size: larger;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    margin: 0.5%;
+}
+
+
+hr{
+    border:transparent;
+}
